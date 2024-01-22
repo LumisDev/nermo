@@ -21,7 +21,6 @@ const App = () => {
 					radius={1}
 					distort={0.5}
 					color='#ffe4a2'
-					wireframe
 				/>
 			</mesh>
 		</>
