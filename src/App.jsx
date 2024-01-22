@@ -16,12 +16,22 @@ const App = () => {
 					radialSegments={16}
 					tubalSegments={100}
 				/>
-				<MeshDistortMaterial
+				{wireframe ? (
+					<MeshDistortMaterial
+					speed={speed}
+					radius={radius}
+					distort={distort}
+					color='#ffe4a2'
+					wireframe
+				/>
+				) : (
+					<MeshDistortMaterial
 					speed={3}
 					radius={1}
 					distort={0.5}
 					color='#ffe4a2'
 				/>
+				)}
 			</mesh>
 		</>
 	);
