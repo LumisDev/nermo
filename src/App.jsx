@@ -19,7 +19,7 @@ const App = () => {
 				<MeshDistortMaterial
 					speed={3}
 					radius={1}
-					distort={distort}
+					distort={0.5}
 					color='#ffe4a2'
 					wireframe
 				/>
